@@ -1,0 +1,92 @@
+header {
+    text-align: center;
+    color: rgb(3, 3, 3);
+}
+h1 {
+    font-family: helvetica;
+    color: rgb(8, 8, 8);
+}
+
+h3 {
+    text-align: center;
+    text-decoration: none;
+    font-family: helvetica;
+    color: aliceblue;
+}
+
+.conteudo {
+    font-family: impact;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+.b {
+    margin: 3rem;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    max-width: flex;
+    padding: 30px 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    background: rgb(45, 72, 146);
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.texto {
+    margin: 3rem;
+    padding: 30px 50px;
+    max-width: flex;
+    font-family: helvetica;
+    color: rgb(0, 0, 0);
+
+}
+
+.link {
+    font-family: impact;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+} 
+
+
+.btn {
+    max-inline-size: flex;
+    max-width: flex;
+    display: inline-flex;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    font-family: helvetica;
+    background: rgb(45, 72, 146);
+    border-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+   
+}
+
+.head {
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.head:hover {
+    color:aliceblue
+}
+
+.btn:hover {
+    background: rgb(43, 45, 51);
+    color: rgba(255, 255, 255, 0.822);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}

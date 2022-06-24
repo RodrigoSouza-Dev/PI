@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLAB</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css\style.css' %}" media="screen" />
+</head>
+<body>
+    <header>
+        <a class="head" href="{% url 'index' %}">
+            <div class="btn">Início</div>
+        </a>
+
+        <a class="head" href="{% url 'port' %}">
+            <div class="btn">Português</div>
+       
+        <a class="head" href="{% url 'math' %}">
+            <div class="btn">Matemática</div>
+        </a>
+        
+        <a class="head" href="{% url 'habil' %}">
+            <div class="btn">Habilidades</div>
+        </a>
+           
+        <a class="head" href="{% url 'activ' %}">
+            <div class="btn">Atividades</div>
+        </a>
+       
+    </header>
+
+    {% block content %} {% endblock %}
+
+    <footer>
+        <h2>Qualquer dúvida ou sugestão, entre em contato conosco.</h2>
+    </footer>
+</body>
+</html>

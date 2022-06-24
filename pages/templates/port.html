@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <h1>Seja bem vindo ao seu conteúdo de português. Bons estudos!</h1>
+
+    {% if portugues %}
+    {% for conteudo in portugues %}
+    <div>
+        <a href="{% url 'portugues' conteudo.id %}">
+            <div>
+                  <h2>{{ conteudo.titulo }}</h2>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+    {% else %}
+    {% endif %}
+{% endblock %}
