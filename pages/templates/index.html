@@ -2,22 +2,11 @@
 {% load static %}
 {% block content %}
 
-    <header>
+    <header id="index-header">
         <h1>Aprendizado Online é aqui.</h1>
         <h2>Seja bem vindo ao COLAB!</h2>
     </header>
-    <!--<div class="conteudo">
-        <a class="link" href="{% url 'port' %}"><img src="{% static 'img\portgues.png' %}" alt="Portugês"></a>
-    </div>
-    <div class="conteudo">
-        <a class="link" href="{% url 'math' %}"><img src="{% static 'img\matematica.png' %}" alt="Portugês"></a>
-    </div>
-    <div class="conteudo">
-        <a class="link" href="{% url 'habil' %}"><img src="{% static 'img\habilidades.png' %}" alt="Portugês"></a>
-    </div>
-    <div class="conteudo">
-        <a class="link" href="{% url 'activ' %}"><img src="{% static 'img\atividades.png' %}" alt="Portugês"></a>
-    </div>-->
+    
     <div class="conteudo">
         <a class="link" href="{% url 'port' %}"><div class="b"><h3>PORTUGUÊS</h3></a></div>
         <div class="texto">   
@@ -38,9 +27,6 @@
         <a  class="link" href="{% url 'habil' %}"><div class="b"><h3>HABILIDADES</h3></a></div>
     </div>
 
-    <div class="conteudo">
-        <a class="link" href="{% url 'activ' %}"><div class="b"><h3>ATIVIDADES</h3></a></div>
-    </div>
-
+    
 {% endblock %}
    
