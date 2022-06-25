@@ -9,27 +9,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css\style.css' %}" media="screen" />
 </head>
 <body>
-    <header>
-        <a class="head" href="{% url 'index' %}">
-            <div class="btn">Início</div>
-        </a>
+    <menu>
+        <header>
+            <a class="head" href="{% url 'index' %}">
+                <div class="btn">Início</div>
+            </a>
 
-        <a class="head" href="{% url 'port' %}">
-            <div class="btn">Português</div>
-       
-        <a class="head" href="{% url 'math' %}">
-            <div class="btn">Matemática</div>
-        </a>
+            <a class="head" href="{% url 'port' %}">
+                <div class="btn">Português</div>
         
-        <a class="head" href="{% url 'habil' %}">
-            <div class="btn">Habilidades</div>
-        </a>
-           
-        <a class="head" href="{% url 'activ' %}">
-            <div class="btn">Atividades</div>
-        </a>
-       
-    </header>
+            <a class="head" href="{% url 'math' %}">
+                <div class="btn">Matemática</div>
+            </a>
+            
+            <a class="head" href="{% url 'habil' %}">
+                <div class="btn">Habilidades</div>
+            </a>
+            
+        </header>
+    </menu>
 
     {% block content %} {% endblock %}
 

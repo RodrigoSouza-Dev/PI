@@ -26,14 +26,37 @@ def portugues(request, portugues_id):
 ###################################################################
 
 def math(request):
-    
-    return render(request, 'math.html')
+    matematica = Matematica.objects.all( )
 
-def activ(request):
-    return render(request, 'activ.html')
+    dados= {
+        'matematica':matematica
+    }
 
+    return render(request, 'math.html', dados)
+
+def matematica(request, matematica_id):
+    matematica = get_object_or_404(Matematica, pk=matematica_id)
+
+    math_a_exibir = {
+        'matematica': matematica
+    }
+
+    return render(request, 'matematica.html', math_a_exibir) 
+#####################################################################
 def habil(request):
-    return render(request, 'habil.html')
+    habilidades = Habilidades.objects.all( )
 
-def content(request):
-    return render(request, 'content.html')
+    dados= {
+        'habilidades': habilidades
+    }
+
+    return render(request, 'habil.html', dados)
+
+def habilidades(request, habilidades_id):
+    habilidades = get_object_or_404(Habilidades, pk=habilidades_id)
+
+    habil_a_exibir = {
+        'habilidades': habilidade
+    }
+
+    return render(request, 'habilidades.html', habil_a_exibir) 

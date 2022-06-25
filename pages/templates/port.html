@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-
+    <header>
     <h1>Seja bem vindo ao seu conteúdo de português. Bons estudos!</h1>
+    </header>
+    
 
     {% if portugues %}
     {% for conteudo in portugues %}
-    <div>
-        <a href="{% url 'portugues' conteudo.id %}">
-            <div>
-                  <h2>{{ conteudo.titulo }}</h2>
+    <div class="container-content">
+        <a class="link" href="{% url 'portugues' conteudo.id %}">
+            <div class="cantainer-link">
+                  <h2 class="container-title">{{ conteudo.titulo }}</h2>
             </div>
         </a>
     </div>

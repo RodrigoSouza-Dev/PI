@@ -1,7 +1,21 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
+    <header>
+    <h1>Seja bem vindo ao seu conteúdo de Matemática. Bons estudos!</h1>
+    </header>
+    
 
-    <h1>Seja bem vindo ao seu conteúdo de matemática. Vamos aprender um pouco mais?</h1>
-
+    {% if matematica %}
+    {% for conteudo in matematica %}
+    <div class="container-content">
+        <a class="link" href="{% url 'matematica' conteudo.id %}">
+            <div class="cantainer-link">
+                  <h2 class="container-title">{{ conteudo.titulo }}</h2>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+    {% else %}
+    {% endif %}
 {% endblock %}
