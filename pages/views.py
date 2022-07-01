@@ -1,4 +1,8 @@
 from django.shortcuts import render, get_list_or_404, get_object_or_404
+from django.http import FileResponse, Http404, HttpResponse
+import re, os
+import os
+from django.views.decorators.csrf import csrf_exempt
 from .models import Portugues, Matematica, Habilidades, Lembrete
 
 def index(request):
@@ -23,7 +27,10 @@ def portugues(request, portugues_id):
     }
 
     return render(request, 'portugues.html', port_a_exibir) 
-###################################################################
+
+
+
+
 
 def math(request):
     matematica = Matematica.objects.all( )
@@ -60,3 +67,5 @@ def habilidades(request, habilidades_id):
     }
 
     return render(request, 'habilidades.html', habil_a_exibir) 
+
+############################################
