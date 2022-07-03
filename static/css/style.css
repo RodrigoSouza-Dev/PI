@@ -1,10 +1,29 @@
+#pdf-exemplo {
+    border: 1px solid black;
+}    
+
+
+menu {
+    max-width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+
 header {
     text-align: center;
     color: rgb(3, 3, 3);
 }
 h1 {
+    text-align: center;
     font-family: helvetica;
     color: rgb(8, 8, 8);
+}
+
+h2 {
+    font-family: helvetica;
+    text-align: center;
+    color: black;
 }
 
 h3 {
@@ -12,6 +31,41 @@ h3 {
     text-decoration: none;
     font-family: helvetica;
     color: aliceblue;
+}
+
+p {
+    font-family: helvetica;
+    font-size: 16px;
+    text-align: left;
+}
+
+ol {
+    text-align: justify;
+    text-align: left;
+}
+
+.container-content {
+    text-align: justify;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+    font-family:Helvetica;
+    background: rgb(45, 72, 146);
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+     
+}
+
+.container-title {
+    font-family: Helvetica;
+    font-size: 30px;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(252, 252, 252)
 }
 
 .conteudo {
@@ -37,9 +91,7 @@ h3 {
 }
 
 .texto {
-    margin: 3rem;
-    padding: 30px 50px;
-    max-width: flex;
+    text-align: justify;
     font-family: helvetica;
     color: rgb(0, 0, 0);
 
@@ -88,5 +140,7 @@ h3 {
 }
 
 footer {
+    margin: 10rem, 10rem;
+    font-family: helvetica;
     text-align: center;
 }

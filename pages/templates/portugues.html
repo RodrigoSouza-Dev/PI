@@ -4,8 +4,55 @@
         
     <div class="show">
         <div class="titulo"><h2>{{ portugues.titulo }}</h2></div>
-        <div class="texto"><h4>{{ portugues.conteudo }}</h4></div>
-        <a href=""><div class="b"><h3>ATIVIDADE</h3></div></a>           
+        <div class="texto">
+            <p>{{portugues.p1}}</p>
+                <br>
+            <p> {{portugues.p2}}</p>
+                <br>
+            
+        </div>
+        
+        <div class="titulo">
+            <a href="{{portugues.link_arquivo1}}"><div class="b"><h3>{{ portugues.nome_arquivo1 }}</h3></div></a>
+        </div>  
+
+        <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+        <iframe src="{{portugues.link_arquivo1}}" margin-left="4rem"  align="center" width="100%" height="780" ></iframe>
+       
+        <canvas id="pdf-exemplo"></canvas>
+        
+
+        <div class="titulo">
+            <a href="{{portugues.id_video}}"><div class="b"><h3>{{ portugues.nome_arquivo2 }}</h3></div></a>
+
+            <iframe  width="100%" height="720px" display="flex" align="center" src="https://www.youtube.com/embed/{{portugues.id_video}}"> </iframe>
+
+        </div>
+
+        <div class="titulo">
+            <a href="{{portugues.audio_link}}"><div class="b"><h3>{{ portugues.nome_conteudo }}</h3></div></a>
+
+            <audio controls>
+                <source src="{{portugues.audio_link}}" type="audio/ogg">
+                <source src="{{portugues.audio_link}}" type="audio/mpeg">
+                <a href="{{portugues.audio_link}}">link to the audio</a>
+            </audio>
+
+        </div>
+
+
+        </div>
+
+
+        <div class="titulo">
+            <a href="{{portugues.link_arquivo3}}"><div class="b"><h3>{{ portugues.atividades }}</h3></div></a>
+        </div>  
+
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
 
 {% endblock %}

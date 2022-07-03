@@ -17,6 +17,7 @@ h1 {
 }
 
 h2 {
+    font-family: helvetica;
     text-align: center;
     color: black;
 }
@@ -28,15 +29,34 @@ h3 {
     color: aliceblue;
 }
 
+p {
+    text-align: left;
+    text-align: justify;
+    font-size: 20px;
+}
+
+ol {
+    text-align: justify;
+    text-align: left;
+    font-size: 20px;
+}
+
+li {
+    text-align: left;
+    text-align: justify;
+    font-size: 20px;
+}
+
 .container-content {
-    margin: 3rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1rem;
+    text-align: justify;
     text-align: center;
     align-self: center;
     align-content: center;
-    align-items: center;
-    max-width: flex;
-    padding: 30px 50px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Helvetica;
     background: rgb(45, 72, 146);
     border-radius: 50px;
     user-select: none;
@@ -55,8 +75,8 @@ h3 {
     color: rgb(252, 252, 252)
 }
 
+
 .conteudo {
-    
     font-family: impact;
     text-align: center;
     text-decoration: none;
@@ -79,9 +99,11 @@ h3 {
 }
 
 .texto {
-    margin: 3rem;
-    padding: 30px 50px;
-    max-width: flex;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 0rem, 2rem;
+    text-align: justify;
     font-family: helvetica;
     color: rgb(0, 0, 0);
 
@@ -130,5 +152,7 @@ h3 {
 }
 
 footer {
+    margin: 10rem, 10rem;
+    font-family: helvetica;
     text-align: center;
 }
